@@ -8,7 +8,7 @@ The main goal of the project is to improve underwater navigation, marine monitor
 
 ---
 
-# 2. Objectives
+## 2. Objectives
 
 - Detect underwater objects accurately
 - Improve underwater navigation systems
@@ -18,7 +18,7 @@ The main goal of the project is to improve underwater navigation, marine monitor
 
 ---
 
-# 3. Technologies Used
+## 3. Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
@@ -31,13 +31,13 @@ The main goal of the project is to improve underwater navigation, marine monitor
 
 ---
 
-# 4. System Architecture
+## 4. System Architecture
 
 text Input Image       ↓ Preprocessing       ↓ YOLOv8 Detection       ↓ Feature Extraction       ↓ CNN/SVM Classification       ↓ Output Prediction 
 
 ---
 
-# 5. Dataset Information
+## 5. Dataset Information
 
 - Dataset Source: Custom underwater dataset
 - Total Images: 8000+
@@ -46,13 +46,13 @@ text Input Image       ↓ Preprocessing       ↓ YOLOv8 Detection       ↓ Fe
 
 ---
 
-# 6. Folder Structure
+## 6. Folder Structure
 
 text BEL_AUV_PROJECT/ │ ├── phase2_cnn/ ├── dataset/ ├── models/ ├── runs/ ├── README.md ├── requirements.txt └── scripts/ 
 
 ---
 
-# 7. Installation
+## 7. Installation
 
 Clone the repository:
 
@@ -68,23 +68,23 @@ bash pip install -r requirements.txt
 
 ---
 
-# 8. Running the Project
+## 8. Running the Project
 
-## Train YOLO Model
+### Train YOLO Model
 
 bash python train.py 
 
-## Run Object Detection
+### Run Object Detection
 
 bash python detect.py 
 
-## CNN Classification
+### CNN Classification
 
 bash python cnn_classifier.py 
 
 ---
 
-# 9. Results
+## 9. Results
 
 | Metric | Value |
 |--------|------|
@@ -100,7 +100,7 @@ bash python cnn_classifier.py
 
 ---
 
-# 10. Challenges Faced
+## 10. Challenges Faced
 
 - Underwater image noise
 - Low visibility conditions
@@ -109,7 +109,7 @@ bash python cnn_classifier.py
 
 ---
 
-# 11. Future Improvements
+## 11. Future Improvements
 
 - Real-time AUV integration
 - Advanced underwater image enhancement
@@ -118,9 +118,8 @@ bash python cnn_classifier.py
 
 ---
 
-# 12. Author
+## 12. Author
 
-## Pavan Kumar Varanasi
+### Pavan Kumar Varanasi
 
-GitHub:
-https://github.com/pavan999-eng
+GitHub: https://github.com/pavan999-eng
