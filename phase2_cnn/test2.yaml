@@ -1,0 +1,16 @@
+path: /Users/pavankumarvaranasi/Downloads/21331143/UATD_Test_2
+
+train: images
+val: images
+
+names:
+  0: ball
+  1: plane
+  2: cylinder
+  3: cube
+  4: tyre
+  5: circle cage
+  6: human body
+  7: metal bucket
+  8: rov
+  9: square cage

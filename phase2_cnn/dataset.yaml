@@ -1,0 +1,18 @@
+path: ./dataset
+
+train: images/train
+val: images/val
+
+nc: 10
+
+names:
+  0: ball
+  1: plane
+  2: cylinder
+  3: cube
+  4: tyre
+  5: circle cage
+  6: human body
+  7: metal bucket
+  8: rov
+  9: square cage
