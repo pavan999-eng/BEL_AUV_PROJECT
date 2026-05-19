@@ -16,5 +16,9 @@ models/*.pkl
 *.pt
 *.pth
 
+# Generated prediction outputs
+*.jpg
+*.png
+
 # Mac
 .DS_Store
