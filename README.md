@@ -2,19 +2,21 @@
 
 ## 1. Project Overview
 
-This project develops an AI-powered underwater object detection and classification system for Autonomous Underwater Vehicles (AUVs).
+BEL_AUV_PROJECT is an AI-powered underwater object detection and classification system designed for Autonomous Underwater Vehicles (AUVs).
 
-The system uses:
+The project uses:
 
 - YOLOv8 for underwater object detection
-- CNN/SVM-based models for classification and analysis
+- CNN/SVM models for classification
+- OpenCV for image processing
+- Deep learning techniques for marine environment analysis
 
-The main goal is to improve:
+The goal is to improve:
 
 - Underwater navigation
 - Marine monitoring
 - Real-time object recognition
-- Autonomous Underwater Vehicle (AUV) operations
+- Autonomous underwater operations
 
 ---
 
@@ -24,14 +26,14 @@ The main goal is to improve:
 - Improve underwater navigation systems
 - Perform real-time object recognition
 - Enable AI-based marine environment analysis
-- Support AUV operations
+- Support Autonomous Underwater Vehicle (AUV) operations
 
 ---
 
 ## 3. Technologies Used
 
 | Technology | Purpose |
-|---|---|
+|------------|---------|
 | Python | Core programming |
 | OpenCV | Image processing |
 | YOLOv8 | Object detection |
@@ -43,7 +45,19 @@ The main goal is to improve:
 
 ## 4. System Architecture
 
-text Input Image      ↓ Preprocessing      ↓ YOLOv8 Detection      ↓ Feature Extraction      ↓ CNN/SVM Classification      ↓ Output Prediction 
+```text
+Input Image
+     ↓
+Preprocessing
+     ↓
+YOLOv8 Detection
+     ↓
+Feature Extraction
+     ↓
+CNN/SVM Classification
+     ↓
+Output Prediction
+```
 
 ---
 
@@ -62,7 +76,20 @@ text Input Image      ↓ Preprocessing      ↓ YOLOv8 Detection      ↓ Featu
 
 ## 6. Folder Structure
 
-text BEL_AUV_PROJECT/ │ ├── phase2_cnn/ ├── dataset/ ├── models/ ├── runs/ ├── scripts/ ├── README.md └── requirements.txt 
+```text
+BEL_AUV_PROJECT/
+│
+├── deployment/
+├── phase1_ml/
+├── phase2_cnn/
+├── dataset/
+├── models/
+├── runs/
+├── scripts/
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
 
 ---
 
@@ -70,15 +97,21 @@ text BEL_AUV_PROJECT/ │ ├── phase2_cnn/ ├── dataset/ ├── mod
 
 ### Clone the Repository
 
-bash git clone https://github.com/pavan999-eng/BEL_AUV_PROJECT.git 
+```bash
+git clone https://github.com/pavan999-eng/BEL_AUV_PROJECT.git
+```
 
 ### Navigate to Project Directory
 
-bash cd BEL_AUV_PROJECT 
+```bash
+cd BEL_AUV_PROJECT
+```
 
 ### Install Dependencies
 
-bash pip install -r requirements.txt 
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
@@ -86,27 +119,33 @@ bash pip install -r requirements.txt
 
 ### Train YOLO Model
 
-bash python train.py 
+```bash
+python train.py
+```
 
 ### Run Object Detection
 
-bash python detect.py 
+```bash
+python detect.py
+```
 
-### CNN Classification
+### Run CNN Classification
 
-bash python cnn_classifier.py 
+```bash
+python cnn_classifier.py
+```
 
 ---
 
 ## 9. Results
 
 | Metric | Value |
-|---|---|
+|--------|------|
 | mAP50 | 92% |
 | Precision | 89% |
 | Recall | 91% |
 
-### Sample Outputs
+### Outputs
 
 - Underwater object detection results
 - YOLO prediction outputs
@@ -136,4 +175,11 @@ bash python cnn_classifier.py
 
 ### Pavan Kumar Varanasi
 
-GitHub: https://github.com/pavan999-eng
+GitHub:  
+https://github.com/pavan999-eng
+
+---
+
+## 13. License
+
+This project is developed for research and educational purposes.
