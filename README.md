@@ -2,9 +2,19 @@
 
 ## 1. Project Overview
 
-This project develops an AI-powered underwater object detection and classification system for Autonomous Underwater Vehicles (AUVs). The system uses YOLOv8 for underwater object detection and CNN/SVM-based models for object classification and analysis.
+This project develops an AI-powered underwater object detection and classification system for Autonomous Underwater Vehicles (AUVs).
 
-The main goal of the project is to improve underwater navigation, marine monitoring, and real-time object recognition using deep learning and computer vision techniques.
+The system uses:
+
+- YOLOv8 for underwater object detection
+- CNN/SVM-based models for classification and analysis
+
+The main goal is to improve:
+
+- Underwater navigation
+- Marine monitoring
+- Real-time object recognition
+- Autonomous Underwater Vehicle (AUV) operations
 
 ---
 
@@ -14,14 +24,14 @@ The main goal of the project is to improve underwater navigation, marine monitor
 - Improve underwater navigation systems
 - Perform real-time object recognition
 - Enable AI-based marine environment analysis
-- Support Autonomous Underwater Vehicle (AUV) operations
+- Support AUV operations
 
 ---
 
 ## 3. Technologies Used
 
 | Technology | Purpose |
-|------------|---------|
+|---|---|
 | Python | Core programming |
 | OpenCV | Image processing |
 | YOLOv8 | Object detection |
@@ -33,7 +43,7 @@ The main goal of the project is to improve underwater navigation, marine monitor
 
 ## 4. System Architecture
 
-text Input Image       ↓ Preprocessing       ↓ YOLOv8 Detection       ↓ Feature Extraction       ↓ CNN/SVM Classification       ↓ Output Prediction 
+text Input Image      ↓ Preprocessing      ↓ YOLOv8 Detection      ↓ Feature Extraction      ↓ CNN/SVM Classification      ↓ Output Prediction 
 
 ---
 
@@ -42,27 +52,31 @@ text Input Image       ↓ Preprocessing       ↓ YOLOv8 Detection       ↓ Fe
 - Dataset Source: Custom underwater dataset
 - Total Images: 8000+
 - Annotation Format: YOLO TXT
-- Classes: Fish, Coral, Rock, Underwater Objects
+- Classes:
+  - Fish
+  - Coral
+  - Rock
+  - Underwater Objects
 
 ---
 
 ## 6. Folder Structure
 
-text BEL_AUV_PROJECT/ │ ├── phase2_cnn/ ├── dataset/ ├── models/ ├── runs/ ├── README.md ├── requirements.txt └── scripts/ 
+text BEL_AUV_PROJECT/ │ ├── phase2_cnn/ ├── dataset/ ├── models/ ├── runs/ ├── scripts/ ├── README.md └── requirements.txt 
 
 ---
 
 ## 7. Installation
 
-Clone the repository:
+### Clone the Repository
 
 bash git clone https://github.com/pavan999-eng/BEL_AUV_PROJECT.git 
 
-Navigate to the project directory:
+### Navigate to Project Directory
 
 bash cd BEL_AUV_PROJECT 
 
-Install dependencies:
+### Install Dependencies
 
 bash pip install -r requirements.txt 
 
@@ -87,7 +101,7 @@ bash python cnn_classifier.py
 ## 9. Results
 
 | Metric | Value |
-|--------|------|
+|---|---|
 | mAP50 | 92% |
 | Precision | 89% |
 | Recall | 91% |
