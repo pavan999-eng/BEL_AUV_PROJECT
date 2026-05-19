@@ -45,7 +45,6 @@ CNN/SVM Classification
 ↓
 Output Prediction
 
-(Add architecture image later)
 
 ---
 
