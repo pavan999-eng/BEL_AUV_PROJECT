@@ -1,4 +1,20 @@
+# Python
 venv/
 __pycache__/
 *.pyc
+
+# Datasets
+dataset/
+phase2_cnn/dataset/
+
+# YOLO outputs
+runs/
+phase2_cnn/runs/
+
+# Models
+models/*.pkl
+*.pt
+*.pth
+
+# Mac
 .DS_Store
