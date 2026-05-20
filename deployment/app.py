@@ -27,30 +27,61 @@ st.set_page_config(
     layout="wide"
 )
 
+import gdown
+
 # -----------------------------------------------------
-# LOAD YOLO MODEL
+# BASE DIRECTORY
 # -----------------------------------------------------
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-YOLO_PATH = os.path.join(
+MODEL_DIR = os.path.join(
     BASE_DIR,
     "..",
-    "models",
+    "models"
+)
+
+os.makedirs(MODEL_DIR, exist_ok=True)
+
+# -----------------------------------------------------
+# YOLO MODEL PATH
+# -----------------------------------------------------
+
+YOLO_PATH = os.path.join(
+    MODEL_DIR,
     "best.pt"
 )
 
+# -----------------------------------------------------
+# SVM MODEL PATH
+# -----------------------------------------------------
+
 SVM_PATH = os.path.join(
-    BASE_DIR,
-    "..",
-    "models",
+    MODEL_DIR,
     "image_svm.pkl"
 )
+
+# -----------------------------------------------------
+# DOWNLOAD LARGE SVM MODEL
+# -----------------------------------------------------
+
+if not os.path.exists(SVM_PATH):
+
+    url = "https://drive.google.com/uc?id=1fmVyVRQJAp3IrZ9XY-gVYmRAkbgPMRQn"
+
+    gdown.download(
+        url,
+        SVM_PATH,
+        quiet=False
+    )
+
+# -----------------------------------------------------
+# LOAD MODELS
+# -----------------------------------------------------
 
 model = YOLO(YOLO_PATH)
 
 svm_model = joblib.load(SVM_PATH)
-
 # -----------------------------------------------------
 # CSS
 # -----------------------------------------------------
