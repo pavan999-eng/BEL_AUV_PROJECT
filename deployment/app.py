@@ -31,24 +31,25 @@ st.set_page_config(
 # LOAD YOLO MODEL
 # -----------------------------------------------------
 
-MODEL_PATH = os.path.join(
-    "phase2_cnn",
-    "runs",
-    "detect",
-    "train-2",
-    "weights",
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+YOLO_PATH = os.path.join(
+    BASE_DIR,
+    "..",
+    "models",
     "best.pt"
 )
 
-model = YOLO(MODEL_PATH)
-
-# -------------------------------------
-# LOAD SVM MODEL
-# -------------------------------------
-
-svm_model = joblib.load(
-    "models/image_svm.pkl"
+SVM_PATH = os.path.join(
+    BASE_DIR,
+    "..",
+    "models",
+    "image_svm.pkl"
 )
+
+model = YOLO(YOLO_PATH)
+
+svm_model = joblib.load(SVM_PATH)
 
 # -----------------------------------------------------
 # CSS
